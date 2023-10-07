@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our E-commerce Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Products">
+            <section id="Product1" class="product-container">
+                <img src="product images/product-1.jpg" alt="Product Image" width="250" height="250">
+                <product_item>
+                <div class="product-details"> 
+                <h1>Samsung Galaxy S23</h1>
+                <p>Price: Rs 70,000</p>
+                <h3>Product Details</h3>
+                <ul>
+                    <li>3900mAh battery</li>
+                    <li>6.1" 2340 x 1080 (Flat FHD+) 120 hz display</li>
+                    <li>Snapdragon® 8 Gen 2 Mobile</li>
+                    <li>
+                        Selfie Camera 12.0MP<br> Ultra Wide Camera 12.0MP<br> Wide-angle Camera 50.0MP<br> Telephoto 10.0MP
+                    </li>
+                    <li>Water Resistant: IP68</li>
+                </ul>
+                <button type="button" class="add-to-cart" data-product-id="1">Add to Cart</button>
+                </div>
+            </product_item>
+            </section>
+            <hr>
+            <section id="Product2" class="product-container">
+                <img src="product images/product-2.jpg" alt="Product Image" width="300" height="250">
+            <product_item>
+                <div class="product-details"> 
+                <h1>Lenovo Legion 7</h1>
+                <p>Price: Rs 1,15,000</p>
+                <h3>Product Details</h3>
+                <ul>
+                    <li>13th Gen Intel® Core™ i9-13900H</li>
+                    <li>FHD (1920 x 1080) resolution display</li>
+                    <li>Memory: 32GB 5200MHz DDR5</li>
+                    <li>Storage: 1Tb NVME SSD</li>
+                </ul>
+                <button type="button" class="add-to-cart" data-product-id="2">Add to Cart</button>
+                </div>
+            </product_item>
+            </section>
+            
+        </section>
+    </main>
+    <button type="button" class="view-cart" onclick="view_cart()">View Cart</button>
+    <hr>
+    <div id="myDIV">    
+    <section id="cart-section">
+       
+        <h2>Your Shopping Cart</h2>
+        <ul id="cart-items">
+            <!-- Cart items will be displayed here dynamically using JavaScript -->
+        </ul>
+        <p>Total: <span id="cart-total">0.00</span></p>
+    </section>
+    </div>
+    <footer>
+        &copy; 2023 E-commerce Store
+    </footer>
+    <script src="cart.js"></script>
+</body>
+</html>
